@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c7b6d5d022ec48843a99df57fbfb2489
+timeCreated: 1500181113
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FlemishScript BT
+  fontNames:
+  - FlemishScript BT
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

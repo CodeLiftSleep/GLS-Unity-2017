@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e1de678802a9e3a45aea26fae9b76f33
+timeCreated: 1500181134
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: LuzSans-Book
+  fontNames:
+  - LuzSans-Book
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

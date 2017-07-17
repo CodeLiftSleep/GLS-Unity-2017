@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: c280233eac42ee34e980a6382286c66a
+timeCreated: 1500181110
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Perpetua
+  fontNames:
+  - Perpetua
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1dea446712e8d584b9a7088a00e979cc, type: 3}
+  - {fileID: 12800000, guid: b5cfc95b372050d4881eee468e1eb730, type: 3}
+  - {fileID: 12800000, guid: 607d134e3eff29941a03a624d4d5015f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

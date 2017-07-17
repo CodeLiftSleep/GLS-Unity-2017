@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 39a6f577c1533f647abed0a91c7f8fb4
+timeCreated: 1500180981
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SketchFlow Print
+  fontNames:
+  - SketchFlow Print
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

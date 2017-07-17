@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 29e3ea418d3028942a6502b704a18bdb
+timeCreated: 1500180975
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kunstler Script
+  fontNames:
+  - Kunstler Script
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 24c36bf27607e3a4a8724b7668e5c74d
+timeCreated: 1500180970
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Engravers MT
+  fontNames:
+  - Engravers MT
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

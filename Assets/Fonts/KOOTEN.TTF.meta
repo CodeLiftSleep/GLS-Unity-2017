@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ef6eadde0f0814f42afcbf56791f2c20
+timeCreated: 1500181141
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kootenay
+  fontNames:
+  - Kootenay
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

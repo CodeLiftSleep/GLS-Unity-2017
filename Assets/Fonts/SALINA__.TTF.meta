@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 49baf679d9d4e4b44891de814bd54bfc
+timeCreated: 1500180986
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Salina
+  fontNames:
+  - Salina
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 19746a19f8f12ba4ab85506b0fd69e49
+timeCreated: 1500180966
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Segoe Keycaps
+  fontNames:
+  - Segoe Keycaps
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

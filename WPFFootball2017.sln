@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFFootball2017.Plugins", "WPFFootball2017.Plugins.csproj", "{5F6633D6-96C2-0BF6-3334-EDEA6E61D20B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFFootball2017", "WPFFootball2017.csproj", "{10BECEAE-469E-0F20-F7D5-F0B4ABE67A14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFFootball2017.Editor", "WPFFootball2017.Editor.csproj", "{CDC8C349-F3B4-3AA7-2E3E-7C343883CA64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F6633D6-96C2-0BF6-3334-EDEA6E61D20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F6633D6-96C2-0BF6-3334-EDEA6E61D20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F6633D6-96C2-0BF6-3334-EDEA6E61D20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F6633D6-96C2-0BF6-3334-EDEA6E61D20B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BECEAE-469E-0F20-F7D5-F0B4ABE67A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BECEAE-469E-0F20-F7D5-F0B4ABE67A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BECEAE-469E-0F20-F7D5-F0B4ABE67A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BECEAE-469E-0F20-F7D5-F0B4ABE67A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC8C349-F3B4-3AA7-2E3E-7C343883CA64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC8C349-F3B4-3AA7-2E3E-7C343883CA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC8C349-F3B4-3AA7-2E3E-7C343883CA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC8C349-F3B4-3AA7-2E3E-7C343883CA64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

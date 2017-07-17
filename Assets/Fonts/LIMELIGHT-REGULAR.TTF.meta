@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 411db4854c8c9554ba01663a95fac852
+timeCreated: 1500180985
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Limelight
+  fontNames:
+  - Limelight
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

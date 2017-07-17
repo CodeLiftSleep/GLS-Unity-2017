@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: d4b840e41f882aa49898f2e7a5a9cfa4
+timeCreated: 1500181117
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gentium Basic
+  fontNames:
+  - Gentium Basic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1ea99cc146ef6be44ae4d10991e1ddd0, type: 3}
+  - {fileID: 12800000, guid: 1f4ace8c949c2ee46b56add049285b42, type: 3}
+  - {fileID: 12800000, guid: 771ab8ed48217884ab48054324e35e5a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

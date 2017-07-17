@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a53ef21da0cc12f49823009f2575bddb
+timeCreated: 1500181096
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pescadero
+  fontNames:
+  - Pescadero
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3ab492c434f62794c8edab5552017a4f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

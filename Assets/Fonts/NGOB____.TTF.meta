@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ceb39a1647ede8c44a18d7008d7ea7fe
+timeCreated: 1500181116
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: News Gothic
+  fontNames:
+  - News Gothic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2c7e3803b2cb0a945a11e02b440b38ca, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

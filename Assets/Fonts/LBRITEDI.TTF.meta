@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 6c3482e410694b8478d54c9db9f65d81
+timeCreated: 1500180998
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lucida Bright
+  fontNames:
+  - Lucida Bright
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 00fa5a57fb3f7f5498b0ed46cd645afb, type: 3}
+  - {fileID: 12800000, guid: 6303989f5e61761469a84c4d79e09dfc, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

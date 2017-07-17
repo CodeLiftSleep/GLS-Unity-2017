@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 65dfc564d5cfb7e4fb8bfa9de5824fcf
+timeCreated: 1500180995
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: DejaVu Sans Mono
+  fontNames:
+  - DejaVu Sans Mono
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 27067922856502648bf6228ab319a220, type: 3}
+  - {fileID: 12800000, guid: 3c019dde8e7c2874c898c42b8a151501, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

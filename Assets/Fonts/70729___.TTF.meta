@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a7f6389167e9ae548b0e599e0fd78585
+timeCreated: 1500181098
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Tiranti Solid LET
+  fontNames:
+  - Tiranti Solid LET
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

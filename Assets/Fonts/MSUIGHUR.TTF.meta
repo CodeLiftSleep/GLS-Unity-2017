@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 264dbc21a2112a74faffe45debfb611e
+timeCreated: 1500180971
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Microsoft Uighur
+  fontNames:
+  - Microsoft Uighur
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 26131944abfa54543a8dcb995ba7fbc1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

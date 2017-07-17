@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 4f0fd90e2344d1842b8e69585f5bf7ab
+timeCreated: 1500180989
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Wasco Sans
+  fontNames:
+  - Wasco Sans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 23976430bfc25ea4493f3c6113e22bf8, type: 3}
+  - {fileID: 12800000, guid: 2f3841bc0479807449c0b8067c546ff8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 57d46121a2ecfff41a9a521e3c77a085
+timeCreated: 1500180992
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lindsey
+  fontNames:
+  - Lindsey
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

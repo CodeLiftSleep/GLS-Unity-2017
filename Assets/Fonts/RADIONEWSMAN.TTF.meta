@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a7f24c71fb6da3540a7a894ce04894ba
+timeCreated: 1500181098
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Radio Newsman
+  fontNames:
+  - Radio Newsman
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

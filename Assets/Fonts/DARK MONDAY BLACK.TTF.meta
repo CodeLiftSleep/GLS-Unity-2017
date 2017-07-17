@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e4467d61065f9d04f810e87e882c888a
+timeCreated: 1500181135
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dark monday black
+  fontNames:
+  - Dark monday black
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
