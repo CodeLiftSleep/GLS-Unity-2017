@@ -737,9 +737,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef6a3f479fe22c4a857f2264f172214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: {fileID: 354418613}
-  exit: {fileID: 1845004460}
-  settings: {fileID: 2143809526}
+  startBtn: {fileID: 354418613}
+  exitBtn: {fileID: 1845004460}
+  settingsBtn: {fileID: 2143809526}
   panel: {fileID: 1838135282}
   canvasGrp: {fileID: 1022460023}
 --- !u!225 &1022460023
@@ -928,9 +928,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef6a3f479fe22c4a857f2264f172214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: {fileID: 354418613}
-  exit: {fileID: 1845004460}
-  settings: {fileID: 2143809526}
+  startBtn: {fileID: 0}
+  exitBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
   panel: {fileID: 0}
   canvasGrp: {fileID: 0}
 --- !u!4 &1272559996

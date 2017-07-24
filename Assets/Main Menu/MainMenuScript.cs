@@ -8,9 +8,9 @@ using DG.Tweening;
 
 public class MainMenuScript : MonoBehaviour {
 
-    public Button start;
-    public Button exit;
-    public Button settings;
+    public Button startBtn;
+    public Button exitBtn;
+    public Button settingsBtn;
     public GameObject panel;
     public CanvasGroup canvasGrp;
     
@@ -21,13 +21,13 @@ public class MainMenuScript : MonoBehaviour {
         DOTween.Init();
         myCanvasGroup.DOFade(1, 6);
 
-        Button startBtn = start.GetComponent<Button>();
+        //Button startBtn = start.GetComponent<Button>();
         startBtn.onClick.AddListener(StartGame);
 
-        Button exitBtn = exit.GetComponent<Button>();
+        //Button exitBtn = exit.GetComponent<Button>();
         //exitBtn.onClick.AddListener(QuitGame(panel));
 
-        Button settingsBtn = settings.GetComponent<Button>();
+        //Button settingsBtn = settings.GetComponent<Button>();
         settingsBtn.onClick.AddListener(delegate { GetSettings(myCanvasGroup); });
 	}
 

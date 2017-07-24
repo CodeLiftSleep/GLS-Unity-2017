@@ -1,0 +1,500 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2019389346, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+  m_Name: NFLLogos
+  m_EditorClassIdentifier: 
+  hashCode: -757092580
+  material: {fileID: 21885310369547548}
+  materialHashCode: 0
+  spriteSheet: {fileID: 2800000, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  spriteInfoList:
+  - id: 0
+    x: 0
+    y: 1755.6732
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 0
+    xAdvance: 389.6738
+    scale: 1
+    name: 49ersLogo
+    hashCode: -1591640830
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300000, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 1
+    x: 389.6738
+    y: 1755.6732
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: PanthersLogo
+    hashCode: -1261994644
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300002, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 2
+    x: 779.3476
+    y: 1755.6732
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: RedskinsLogo
+    hashCode: -1889537964
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300004, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 3
+    x: 1169.0214
+    y: 1755.6732
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 185
+    xAdvance: 389.6738
+    scale: 2.25
+    name: CowboysLogo
+    hashCode: -987965737
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300006, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 4
+    x: 1558.6952
+    y: 1755.6732
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: DolphinsLogo
+    hashCode: -138860384
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300008, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 5
+    x: 389.6738
+    y: 1465.6302
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: ChiefsLogo
+    hashCode: -2130184583
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300012, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 6
+    x: 0
+    y: 1463.3464
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: JetsLogo
+    hashCode: -2140728413
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300010, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 7
+    x: 779.3476
+    y: 1463.3464
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: GiantsLogo
+    hashCode: 1852522093
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300014, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 8
+    x: 1169.0214
+    y: 1463.3464
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: TexnasLogo
+    hashCode: 599384542
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300016, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 9
+    x: 1558.6952
+    y: 1463.3464
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: RamsLogo
+    hashCode: -1626577530
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300018, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 10
+    x: 0
+    y: 1171.0198
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 185
+    xAdvance: 389.6738
+    scale: 2.25
+    name: SteelersLogo
+    hashCode: 36287972
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300020, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 11
+    x: 389.6738
+    y: 1171.0198
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: TitansLogo
+    hashCode: 1084188606
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300022, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 12
+    x: 779.3476
+    y: 1171.0198
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: BearsLogo
+    hashCode: -1740593236
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300024, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 13
+    x: 1169.0214
+    y: 1171.0198
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: RaidersLogo
+    hashCode: 800970161
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300026, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 14
+    x: 1558.6952
+    y: 1171.0198
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: BroncosLogo
+    hashCode: -1434936411
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300028, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 15
+    x: 0
+    y: 878.693
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 185
+    xAdvance: 389.6738
+    scale: 2.25
+    name: BillsLogo
+    hashCode: 66082035
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300030, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 16
+    x: 389.6738
+    y: 878.693
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: BuccaneersLogo
+    hashCode: -563522670
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300032, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 17
+    x: 779.3476
+    y: 878.693
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 185
+    xAdvance: 389.6738
+    scale: 2.25
+    name: BrownsLogo
+    hashCode: 1837187678
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300034, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 18
+    x: 1169.0214
+    y: 878.693
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: BengalsLogo
+    hashCode: -703810533
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300036, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 19
+    x: 1558.6952
+    y: 878.693
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.3267
+    xAdvance: 389.6738
+    scale: 1
+    name: LionsLogo
+    hashCode: -1835665732
+    unicode: 0
+    pivot: {x: 0, y: 292.3267}
+    sprite: {fileID: 21300038, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 20
+    x: 2.2838025
+    y: 586.3663
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32678
+    xAdvance: 389.6738
+    scale: 1
+    name: CardinalsLogo
+    hashCode: -21584154
+    unicode: 0
+    pivot: {x: 0, y: 292.32678}
+    sprite: {fileID: 21300040, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 21
+    x: 389.6738
+    y: 586.3663
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32678
+    xAdvance: 389.6738
+    scale: 1
+    name: EaglesLogo
+    hashCode: 1946531154
+    unicode: 0
+    pivot: {x: 0, y: 292.32678}
+    sprite: {fileID: 21300042, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 22
+    x: 779.3476
+    y: 586.3663
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32678
+    xAdvance: 389.6738
+    scale: 1
+    name: PackersLogo
+    hashCode: 118093590
+    unicode: 0
+    pivot: {x: 0, y: 292.32678}
+    sprite: {fileID: 21300044, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 23
+    x: 1169.0214
+    y: 586.3663
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32678
+    xAdvance: 389.6738
+    scale: 1
+    name: SaintsLogo
+    hashCode: 1776290297
+    unicode: 0
+    pivot: {x: 0, y: 292.32678}
+    sprite: {fileID: 21300046, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 24
+    x: 1558.6952
+    y: 586.3663
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32678
+    xAdvance: 389.6738
+    scale: 1
+    name: RavensLogo
+    hashCode: 1305169974
+    unicode: 0
+    pivot: {x: 0, y: 292.32678}
+    sprite: {fileID: 21300048, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 25
+    x: 0
+    y: 294.03958
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32672
+    xAdvance: 389.6738
+    scale: 1
+    name: ColtsLogo
+    hashCode: -1906451348
+    unicode: 0
+    pivot: {x: 0, y: 292.32672}
+    sprite: {fileID: 21300050, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 26
+    x: 389.6738
+    y: 294.03958
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32672
+    xAdvance: 389.6738
+    scale: 1
+    name: PatriotsLogo
+    hashCode: -504124835
+    unicode: 0
+    pivot: {x: 0, y: 292.32672}
+    sprite: {fileID: 21300052, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 27
+    x: 779.3476
+    y: 294.03958
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32672
+    xAdvance: 389.6738
+    scale: 1
+    name: SeahawksLogo
+    hashCode: -1064961798
+    unicode: 0
+    pivot: {x: 0, y: 292.32672}
+    sprite: {fileID: 21300054, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 28
+    x: 1169.0214
+    y: 294.03958
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32672
+    xAdvance: 389.6738
+    scale: 1
+    name: JaguarsLogo
+    hashCode: 418436178
+    unicode: 0
+    pivot: {x: 0, y: 292.32672}
+    sprite: {fileID: 21300056, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 29
+    x: 0
+    y: 1.7128519
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32672
+    xAdvance: 389.6738
+    scale: 1
+    name: ChargersLogo
+    hashCode: 1047151568
+    unicode: 0
+    pivot: {x: 0, y: 292.32672}
+    sprite: {fileID: 21300060, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 30
+    x: 389.6738
+    y: 1.7128519
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32672
+    xAdvance: 389.6738
+    scale: 1
+    name: VikingsLogo
+    hashCode: 60992684
+    unicode: 0
+    pivot: {x: 0, y: 292.32672}
+    sprite: {fileID: 21300062, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  - id: 31
+    x: 779.3476
+    y: 1.7128519
+    width: 389.6738
+    height: 292.32672
+    xOffset: 0
+    yOffset: 292.32672
+    xAdvance: 389.6738
+    scale: 1
+    name: FalconsLogo
+    hashCode: 321642577
+    unicode: 0
+    pivot: {x: 0, y: 292.32672}
+    sprite: {fileID: 21300064, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+  fallbackSpriteAssets: []
+--- !u!21 &21885310369547548
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TextMeshPro/Sprite
+  m_Shader: {fileID: 4800000, guid: 3a1c68c8292caf046bd21158886c5e40, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
