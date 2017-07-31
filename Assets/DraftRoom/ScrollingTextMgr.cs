@@ -2,28 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Data;
+
+//using System;
+using Mono.Data.Sqlite;
 
 public class ScrollingTextMgr : MonoBehaviour {
 
     public TextMeshProUGUI TextMeshProComponent;
     public float ScrollSpeed = 1;
-
+    public DataTable DraftDT = new DataTable();
     private TextMeshProUGUI m_cloneTextObj;
     private RectTransform m_textRectTransform;
-    private string origText;
+    private static string origText;
     private bool hasTextChanged;
-
+    private static string updateText;
     private void Awake()
     {     
         m_textRectTransform = TextMeshProComponent.GetComponent<RectTransform>();
-
+      
         m_cloneTextObj = Instantiate(TextMeshProComponent) as TextMeshProUGUI;
         RectTransform cloneRectTransform = m_cloneTextObj.GetComponent<RectTransform>();
         cloneRectTransform.SetParent(m_textRectTransform);
         cloneRectTransform.anchorMin = new Vector2(1, 0.5f);
         cloneRectTransform.localScale = new Vector3(1, 1, 1);
         origText = TextMeshProComponent.text;
-       
     }
 
     void OnEnable()
@@ -61,17 +64,29 @@ public class ScrollingTextMgr : MonoBehaviour {
                 width = TextMeshProComponent.preferredWidth;
                 m_cloneTextObj.text = TextMeshProComponent.text;               
             }
-            TextMeshProComponent.text = origText + "  " + DraftClock.TimeDisplay;
+            TextMeshProComponent.text = origText;
             m_cloneTextObj.rectTransform.position = new Vector3(m_cloneTextObj.rectTransform.position.x,-4.205f, m_cloneTextObj.rectTransform.position.z);
             if (m_cloneTextObj.rectTransform.position.x <= -15) scrollPosition = -m_cloneTextObj.rectTransform.position.x;
             //Scroll the text across the screen by moving the RectTransform
             m_textRectTransform.position = new Vector3((-scrollPosition % width), startPosition.y, startPosition.z);
             scrollPosition += ScrollSpeed  * Time.deltaTime;
-            Debug.Log(m_cloneTextObj.rectTransform.position.x);
             yield return null;
         }
 	}
-    
+    /// <summary>
+    /// This will update the text component every time a draft pick comes in
+    /// </summary>
+    /// <param name="NewPick"></param>
+    /// <param name="TeamOnClockID"></param>
+    public static void UpdateText(DraftPick NewPick, int TeamOnClockID)
+    {       
+        //we need to get the information as to what Team this is
+        string teamLogo = GlobalRefs.teams[NewPick.PickTeamIDCurr].TeamNickname + "Logo";
+        updateText =  @"   <sprite name=""" +teamLogo+ "" + "> Pick " + NewPick.PickNumRound + ":<color=black><b> " + NewPick.PlayerFName + " " +
+            NewPick.PlayerLName + " " + NewPick.PlayerPos + ",  " + NewPick.PlayerCollege + "</b></color>";
+
+        origText += updateText;
+    }
 	// Update is called once per frame
 	void Update () {
         if (DraftClock.m_timeLeft > 0f)

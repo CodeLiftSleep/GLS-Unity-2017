@@ -1,6 +1,10 @@
-﻿<Properties>
+﻿<Properties StartupItem="WPFFootball2017.Plugins.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Main Menu\POCOCreation.cs">
+    <Files>
+      <File FileName="Assets\Main Menu\POCOCreation.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

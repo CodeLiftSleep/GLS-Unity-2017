@@ -22,9 +22,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 0
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: 49ersLogo
     hashCode: -1591640830
     unicode: 0
@@ -36,9 +36,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: PanthersLogo
     hashCode: -1261994644
     unicode: 0
@@ -50,9 +50,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: RedskinsLogo
     hashCode: -1889537964
     unicode: 0
@@ -78,9 +78,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: DolphinsLogo
     hashCode: -138860384
     unicode: 0
@@ -92,9 +92,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: ChiefsLogo
     hashCode: -2130184583
     unicode: 0
@@ -106,9 +106,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: JetsLogo
     hashCode: -2140728413
     unicode: 0
@@ -120,9 +120,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: GiantsLogo
     hashCode: 1852522093
     unicode: 0
@@ -134,11 +134,11 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
-    name: TexnasLogo
-    hashCode: 599384542
+    scale: 2.25
+    name: TexansLogo
+    hashCode: -572516802
     unicode: 0
     pivot: {x: 0, y: 292.3267}
     sprite: {fileID: 21300016, guid: c331dbdd8d3d99e478c2ae45e9982389, type: 3}
@@ -148,9 +148,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: RamsLogo
     hashCode: -1626577530
     unicode: 0
@@ -176,9 +176,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: TitansLogo
     hashCode: 1084188606
     unicode: 0
@@ -190,9 +190,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: BearsLogo
     hashCode: -1740593236
     unicode: 0
@@ -204,9 +204,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: RaidersLogo
     hashCode: 800970161
     unicode: 0
@@ -218,9 +218,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: BroncosLogo
     hashCode: -1434936411
     unicode: 0
@@ -246,9 +246,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: BuccaneersLogo
     hashCode: -563522670
     unicode: 0
@@ -274,9 +274,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: BengalsLogo
     hashCode: -703810533
     unicode: 0
@@ -288,9 +288,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.3267
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: LionsLogo
     hashCode: -1835665732
     unicode: 0
@@ -302,9 +302,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32678
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: CardinalsLogo
     hashCode: -21584154
     unicode: 0
@@ -316,9 +316,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32678
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: EaglesLogo
     hashCode: 1946531154
     unicode: 0
@@ -330,9 +330,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32678
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: PackersLogo
     hashCode: 118093590
     unicode: 0
@@ -344,9 +344,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32678
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: SaintsLogo
     hashCode: 1776290297
     unicode: 0
@@ -358,9 +358,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32678
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: RavensLogo
     hashCode: 1305169974
     unicode: 0
@@ -372,9 +372,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32672
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: ColtsLogo
     hashCode: -1906451348
     unicode: 0
@@ -386,9 +386,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32672
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: PatriotsLogo
     hashCode: -504124835
     unicode: 0
@@ -400,9 +400,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32672
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: SeahawksLogo
     hashCode: -1064961798
     unicode: 0
@@ -414,9 +414,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32672
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: JaguarsLogo
     hashCode: 418436178
     unicode: 0
@@ -428,9 +428,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32672
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: ChargersLogo
     hashCode: 1047151568
     unicode: 0
@@ -442,9 +442,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32672
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: VikingsLogo
     hashCode: 60992684
     unicode: 0
@@ -456,9 +456,9 @@ MonoBehaviour:
     width: 389.6738
     height: 292.32672
     xOffset: 0
-    yOffset: 292.32672
+    yOffset: 185
     xAdvance: 389.6738
-    scale: 1
+    scale: 2.25
     name: FalconsLogo
     hashCode: 321642577
     unicode: 0

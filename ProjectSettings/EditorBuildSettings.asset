@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Settings/Settings.unity
     guid: 95a28561eb29ce848a11a803f4634192
+  - enabled: 1
+    path: Assets/DraftRoom/DraftOpeningScreen.unity
+    guid: 79d94070bfb52f642895495a544d4dcd
