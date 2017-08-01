@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Data;
-
-//using System;
-using Mono.Data.Sqlite;
+using System.Text;
 
 public class ScrollingTextMgr : MonoBehaviour {
-
+    public Button StartDraftBtn;
     public TextMeshProUGUI TextMeshProComponent;
+ 
     public float ScrollSpeed = 1;
     public DataTable DraftDT = new DataTable();
     private TextMeshProUGUI m_cloneTextObj;
@@ -17,6 +17,7 @@ public class ScrollingTextMgr : MonoBehaviour {
     private static string origText;
     private bool hasTextChanged;
     private static string updateText;
+  
     private void Awake()
     {     
         m_textRectTransform = TextMeshProComponent.GetComponent<RectTransform>();
@@ -42,44 +43,56 @@ public class ScrollingTextMgr : MonoBehaviour {
     }
 
     //checks to see if it the text has changed
-    void ON_TEXT_CHANGED(Object obj)
+    void ON_TEXT_CHANGED(UnityEngine.Object obj)
     {
         if (obj == TextMeshProComponent)
             hasTextChanged = true;
     }
 
     // Use this for initialization
-    IEnumerator Start () {
+    void Start () {
         float width = TextMeshProComponent.preferredWidth;
         Vector3 startPosition = m_textRectTransform.position;
-
         float scrollPosition = 0;
 
+        //Start when the start button is clicked
+        StartDraftBtn.onClick.AddListener(() => StartScroll(width, startPosition, scrollPosition));
+	}
+
+    private void StartScroll (float width, Vector3 startPosition, float scrollPosition)
+    {
+        StartCoroutine(StartDraft(width, startPosition, scrollPosition));
+    }
+    IEnumerator StartDraft(float width, Vector3 startPosition, float scrollPosition)
+    {
         while (true)
         {
-            
-           //recompute the width of the REctTransfrom if the text object has changed
-           if (hasTextChanged)
+
+            //recompute the width of the REctTransfrom if the text object has changed
+            if (hasTextChanged)
             {
                 width = TextMeshProComponent.preferredWidth;
-                m_cloneTextObj.text = TextMeshProComponent.text;               
+                m_cloneTextObj.text = TextMeshProComponent.text;
             }
             TextMeshProComponent.text = origText;
-            m_cloneTextObj.rectTransform.position = new Vector3(m_cloneTextObj.rectTransform.position.x,-4.205f, m_cloneTextObj.rectTransform.position.z);
+            m_cloneTextObj.rectTransform.position = new Vector3(m_cloneTextObj.rectTransform.position.x, -4.52f, m_cloneTextObj.rectTransform.position.z);
             if (m_cloneTextObj.rectTransform.position.x <= -15) scrollPosition = -m_cloneTextObj.rectTransform.position.x;
             //Scroll the text across the screen by moving the RectTransform
             m_textRectTransform.position = new Vector3((-scrollPosition % width), startPosition.y, startPosition.z);
-            scrollPosition += ScrollSpeed  * Time.deltaTime;
+            scrollPosition += ScrollSpeed * Time.deltaTime;
             yield return null;
         }
-	}
+    }
+
     /// <summary>
     /// This will update the text component every time a draft pick comes in
     /// </summary>
     /// <param name="NewPick"></param>
     /// <param name="TeamOnClockID"></param>
     public static void UpdateText(DraftPick NewPick, int TeamOnClockID)
-    {       
+    {
+        //Create a stringbuilder for learge string joining operations.
+        
         //we need to get the information as to what Team this is
         string teamLogo = GlobalRefs.teams[NewPick.PickTeamIDCurr].TeamNickname + "Logo";
         updateText =  @"   <sprite name=""" +teamLogo+ "" + "> Pick " + NewPick.PickNumRound + ":<color=black><b> " + NewPick.PlayerFName + " " +
@@ -87,26 +100,10 @@ public class ScrollingTextMgr : MonoBehaviour {
 
         origText += updateText;
     }
-	// Update is called once per frame
-	void Update () {
-        if (DraftClock.m_timeLeft > 0f)
-        {
-            //Update Countdown Clock
-            DraftClock.m_timeLeft -= Time.deltaTime;
-            DraftClock.Minutes = DraftClock.GetLeftMinutes();
-            DraftClock.Seconds = DraftClock.GetLeftSeconds();
+    // Update is called once per frame
+    void Update()
+    {
 
-            if (DraftClock.m_timeLeft > 0f)
-            {
-                DraftClock.TimeDisplay = DraftClock.Minutes + ":" + DraftClock.Seconds.ToString("00");
-            }
-            else
-            {
-                DraftClock.TimeDisplay = "00:00";
-            }
-
-        }
     }
-
 
 }
