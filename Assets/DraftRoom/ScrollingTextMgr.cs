@@ -95,7 +95,7 @@ public class ScrollingTextMgr : MonoBehaviour {
         
         //we need to get the information as to what Team this is
         string teamLogo = GlobalRefs.teams[NewPick.PickTeamIDCurr].TeamNickname + "Logo";
-        updateText =  @"   <sprite name=""" +teamLogo+ "" + "> Pick " + NewPick.PickNumRound + ":<color=black><b> " + NewPick.PlayerFName + " " +
+        updateText =  @"   <sprite name=""" +teamLogo+ "" + "><color=white> Pick " + NewPick.PickNumRound + ":</color><color=black><b> " + NewPick.PlayerFName + " " +
             NewPick.PlayerLName + " " + NewPick.PlayerPos + ",  " + NewPick.PlayerCollege + "</b></color>";
 
         origText += updateText;

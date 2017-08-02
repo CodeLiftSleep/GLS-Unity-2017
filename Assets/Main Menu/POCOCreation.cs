@@ -1817,7 +1817,7 @@ public partial class Teams
 
     public String TeamNickname { get; set; }
 
-    public Int64? TeamAbrev { get; set; }
+    public String TeamAbrev { get; set; }
 
     public String City { get; set; }
 

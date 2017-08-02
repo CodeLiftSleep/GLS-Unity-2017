@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using SQLite;
 using System.Linq;
 using TMPro;
+using DG.Tweening;
 using static GlobalRefs;
 using static ScrollingTextMgr;
 using System;
@@ -17,10 +18,15 @@ public class BeginDraft : MonoBehaviour {
     public int numPicks = 256;
     public TextMeshProUGUI OnClockUpdateLogo;
     public TextMeshProUGUI UpdateClockTime;
+    public TextMeshProUGUI UpdatePicksTB;
+    public GameObject UpdatePicksPanel;
+    private Image img;
     int i;
+    private bool DisplayLatest;
     private bool EndDraft;
     private bool DraftStart;
     private bool pickFlashing;
+    private string nextPicks;
     private bool firstLoop = true; 
     private int teamOnClockID;
     public Button startDraftBtn;
@@ -35,16 +41,17 @@ public class BeginDraft : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        
         pickChime = GetComponent<AudioSource>();
         //Attach the multicast delegate children
         PickIsIn += ResetClock;
         PickIsIn += UpdateDraftInfo;
         PickIsIn += FlashText;
         //PickIsIn += UpdateTicker;
-        
-    
-       //now we need to pull in the list of players in the draft
+
+        img = UpdatePicksPanel.GetComponent<Image>();
+
+
+        //now we need to pull in the list of players in the draft
         using (SQLiteConnection db = new SQLiteConnection(DBPath))
         {
             draftPlayers = db.Query<DraftPlayers>("SELECT * FROM DraftPlayers").ToList();
@@ -75,13 +82,14 @@ public class BeginDraft : MonoBehaviour {
                 teamOnClockID = draftPicks[i].PickTeamIDCurr;
                 teamLogo = teams[teamOnClockID].TeamNickname + "Logo";
                 OnClockUpdateLogo.text = @"<sprite name=""" + teamLogo + ">";
+                GetNextPicks();
                 DraftStart = true;
                 firstLoop = false;
                 yield return null;             
             }
             else
             {
-                yield return new WaitForSecondsRealtime(30f);
+                yield return new WaitForSecondsRealtime(UnityEngine.Random.Range(35,60));
                 //Call the delegate to run the various Pick Is In operations
                 PickIsIn(draftPicks[i], draftPicks[i + 1].PickTeamIDCurr, draftPlayers[i + 2]);
                 draftPlayers.RemoveAt(i + 2);
@@ -89,6 +97,46 @@ public class BeginDraft : MonoBehaviour {
                 
             } 
         }
+    }
+
+    /// <summary>
+    /// display next 12 picks on the board
+    /// </summary>
+    private void GetNextPicks()
+    {
+        var n=0;
+        UpdatePicksTB.text = "<size=32>Upcoming Picks: </size>";
+        for (n = i+1; n < i+13;n++)
+        {
+            UpdatePicksTB.alignment = TextAlignmentOptions.Left;
+            UpdatePicksTB.text += "  <size=30><b><color=#9C2A12>" + draftPicks[n].PickNumOverall + ".</color> <color=#802714>" + teams[draftPicks[n].PickTeamIDCurr].TeamAbrev +"</color></b></size>";
+            UpdatePicksTB.DOFade(1, 2.5f);
+        }
+    }
+    private void ShowLatestPick(DraftPick PickMade, int NextTeamOnClock, DraftPlayers PlayerSelected)
+    {        
+        img.CrossFadeColor(Color.red, 1.5f, true, false);
+        UpdatePicksTB.DOFade(1, 2.5f);
+        UpdatePicksTB.alignment = TextAlignmentOptions.Center;
+        UpdatePicksTB.text = "<size=+30><b>PICK IS IN</b></size>";
+        StartCoroutine(DisplayLatestPick(PickMade, NextTeamOnClock,PlayerSelected));
+    }
+
+    private IEnumerator DisplayLatestPick(DraftPick PickMade, int NextTeamOnClock, DraftPlayers PlayerSelected)
+    {
+        DisplayLatest = true;
+        //We are going to display the player selected here
+        yield return new WaitForSeconds(6f);
+        UpdatePicksTB.text = @"<size=-5><b>" + teams[PickMade.PickTeamIDCurr].TeamName + " " + teams[PickMade.PickTeamIDCurr].TeamNickname + "          " + PickMade.PlayerFName + " " + PickMade.PlayerLName + "   <color=black>" + PickMade.PlayerPos + "</color>   " +
+                             PickMade.PlayerCollege + "</b></size> \n" + "<size=-10><b> Height: " + Math.Round((PlayerSelected.Height.Value/12)*1.0,0)+ "' " + PlayerSelected.Height.Value % 12 + "\"" + "   Weight: " +
+                             PlayerSelected.Weight.Value + " lbs.   40 Yard Time: " + PlayerSelected.FortyYardTime.Value + " seconds";
+
+        //switch back to the normal panel
+        yield return new WaitForSeconds(18f);
+        img.CrossFadeColor(new Color(194, 194, 194, 233), 1.5f, true, false);
+        UpdatePicksTB.DOFade(0, 2.5f);
+        GetNextPicks();
+        UpdateTicker(PickMade, NextTeamOnClock, PlayerSelected);
     }
 
     void ResetClock(DraftPick PickMade, int NextTeamOnClockId, DraftPlayers PlayerSelected)
@@ -132,9 +180,9 @@ public class BeginDraft : MonoBehaviour {
     /// <param name="PlayerSelected"></param>
     void UpdateTicker(DraftPick PickMade, int NextTeamOnClockId, DraftPlayers PlayerSelected)
     {
-        var teamLogo = teams[NextTeamOnClockId].TeamNickname + "Logo";
+        
         UpdateText(PickMade, NextTeamOnClockId);
-        OnClockUpdateLogo.text = @"<sprite name=""" + teamLogo + ">";
+       
     }
 
     /// <summary>
@@ -146,6 +194,7 @@ public class BeginDraft : MonoBehaviour {
     private void FlashText(DraftPick PickMade, int NextTeamOnClock, DraftPlayers PlayerSelected)
     {
         pickFlashing = true;
+        UpdatePicksTB.DOFade(0, 4f);
         StartCoroutine(Blinking());
         StartCoroutine(NotBlinking(PickMade, NextTeamOnClock, PlayerSelected));
     }
@@ -162,11 +211,15 @@ public class BeginDraft : MonoBehaviour {
 
     private IEnumerator NotBlinking(DraftPick PickMade, int NextTeamOnClock, DraftPlayers PlayerSelected)
     {
+        var teamLogo = teams[NextTeamOnClock].TeamNickname + "Logo";
         yield return new WaitForSeconds(5f);      
         pickFlashing = false;
-        UpdateTicker(PickMade, NextTeamOnClock, PlayerSelected);
-
+        ShowLatestPick(PickMade, NextTeamOnClock, PlayerSelected);
+        OnClockUpdateLogo.text = @"<sprite name=""" + teamLogo + ">";
     }
+
+
+
     // Update is called once per frame
     void Update () {
 
