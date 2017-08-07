@@ -9,6 +9,7 @@ using DG.Tweening;
 using static GlobalRefs;
 using static ScrollingTextMgr;
 using System;
+using MarkLight;
 
 /// <summary>
 /// We are going to get the draft prepared and then give a splash screen for the user.  Once he clicks OK, the draft will begin with the first team
@@ -20,6 +21,8 @@ public class BeginDraft : MonoBehaviour {
     public TextMeshProUGUI UpdateClockTime;
     public TextMeshProUGUI UpdatePicksTB;
     public GameObject UpdatePicksPanel;
+    public Button nxtBtnClone;
+    public Text pageTextClone;
     private Image img;
     int i;
     private bool DisplayLatest;
@@ -30,13 +33,14 @@ public class BeginDraft : MonoBehaviour {
     private bool firstLoop = true; 
     private int teamOnClockID;
     public Button startDraftBtn;
+    public static Button nxtBtn;
     private AudioSource pickChime;
     private delegate void PickIn(DraftPick PickMade, int NextTeamOnClock, DraftPlayers PlayerSelected);
     PickIn PickIsIn;
 
     //Create a list of Draft Picks
-    List<DraftPick> draftPicks = new List<DraftPick>();
-    List<DraftPlayers> draftPlayers = new List<DraftPlayers>();
+    public static List<DraftPick> draftPicks { get; set; }
+    public static List<DraftPlayers> draftPlayers { get; set; }
 
     // Use this for initialization
     void Start () {
@@ -49,19 +53,21 @@ public class BeginDraft : MonoBehaviour {
         //PickIsIn += UpdateTicker;
 
         img = UpdatePicksPanel.GetComponent<Image>();
-
-
+        
+        //going to trigger the static button passed to the MarkView UI to click when we click the cloned button
+        //nxtBtnClone.onClick.AddListener(() => ;
         //now we need to pull in the list of players in the draft
         using (SQLiteConnection db = new SQLiteConnection(DBPath))
         {
-            draftPlayers = db.Query<DraftPlayers>("SELECT * FROM DraftPlayers").ToList();
+            
             draftPicks = db.Query<DraftPick>("SELECT * FROM DraftPick").ToList();
             teams = db.Query<Teams>("SELECT * FROM Teams").ToList();
             teams.Insert(0, new Teams());
         }
-        
+
         //hook up the Start Button listener 
         startDraftBtn.onClick.AddListener(() => BeginCycle() );
+        
 	}
 
 

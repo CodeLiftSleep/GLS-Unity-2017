@@ -1,0 +1,7 @@
+<DraftViewScene xmlns="MarkLight">
+  
+  <UserInterface Margin="0,0,0,0">
+    <DraftView/>
+  </UserInterface>
+  <EventSystem/>
+</DraftViewScene>
