@@ -1,17 +1,56 @@
 <DraftView xmlns="MarkLight">
   <Region Width="5%"></Region>
   <Region Width="85%">
-  <Group Spacing="3px" Orientation="Horizontal"  Width="80%" Margin="-500,20,0,0" Alignment="Right">
-    <Label Text="First Name" Width="100px" FontColor="Yellow"/>
-    <Label Text ="Last Name" Width="100px" FontColor="Yellow"/>
-    <Label Text="Pos" Width="60px" FontColor="Yellow"/>
-    <Label Text="Height" Width="60px" FontColor="Yellow"/>
-    <Label Text="Weight" Width="80px" FontColor="Yellow"/>
-    <Label Text="College" Width="150px" FontColor="Yellow"/>
-    <Label Text="Grade" Width="60px" FontColor="Yellow"/>
-    <Label Text="Proj. Round" Width="100px" FontColor="Yellow"/>
-    <Label Text="40 Time" Width="80" FontColor="Yellow"/>
-  </Group>
+    <Group Orientation="Horizontal" Width="80%" Margin="-380,-120,0,0" Alignment="Right" Spacing="3">
+      <Button Text="Drafted Players" BackgroundColor="ForestGreen" FontColor="Black" Width="150" Height="40" Click="GetDraftedPlayers"/>
+      <Button Text="Available Players" BackgroundColor="ForestGreen" FontColor="Black" Width="150" Height="40" Click="GetAvailablePlayers"/>
+      <Button Text="Best Available" BackgroundColor="ForestGreen" FontColor="Black" Width="150" Height="40" Click="GetBestAvailable"/>
+      <Button Text="Team Roster" BackgroundColor="ForestGreen" FontColor="Black" Width="150" Height="40" Click="GetTeamRoster"/>
+      <Button Text="Team Needs" BackgroundColor="ForestGreen" FontColor="Black" Width="150" Height="40" Click="GetTeamNeeds"/>
+    </Group>
+  
+    <ViewSwitcher Id="HeaderSwitcher">
+      <Region><!--Available Players/Best Available Players-->
+        <Group Spacing="3px" Orientation="Horizontal"  Width="80%" Margin="-500,20,0,0" Alignment="Right">
+          <Label Text="First Name" Width="100px" FontColor="Yellow"/>
+          <Label Text="Last Name" Width="100px" FontColor="Yellow"/>
+          <Label Text="Pos" Width="60px" FontColor="Yellow"/>
+          <Label Text="Height" Width="60px" FontColor="Yellow"/>
+          <Label Text="Weight" Width="80px" FontColor="Yellow"/>
+          <Label Text="College" Width="150px" FontColor="Yellow"/>
+          <Label Text="Grade" Width="60px" FontColor="Yellow"/>
+          <Label Text="Proj. Round" Width="100px" FontColor="Yellow"/>
+          <Label Text="40 Time" Width="80px" FontColor="Yellow"/>
+        </Group>
+      </Region>
+      <Region> <!-- Drafted Players-->
+        <Group Spacing="3px" Orientation="Horizontal"  Width="80%" Margin="-500,20,0,0" Alignment="Right">
+          <Label Text="Round" Width="80px" FontColor="Yellow"/>
+          <Label Text="Pick" Width="80px" FontColor="Yellow"/>
+          <Label Text="Team" Width="100px" FontColor="Yellow"/>
+          <Label Text="Player" Width ="200px" FontColor="Yellow"/>
+          <Label Text="Pos" Width ="60px" FontColor="Yellow"/>
+          <Label Text="College" Width="150px" FontColor="Yellow"/>
+          <Label Text="Height" Width="60px" FontColor="Yellow"/>
+          <Label Text="Weight" Width="80px" FontColor="Yellow"/>
+        </Group>
+      </Region>
+      <Region><!--Team Roster-->
+        <Group Spacing="3px" Orientation="Horizontal"  Width="100%" Margin="-500,20,0,0" Alignment="Right">
+          <Label Text="Player" Width="200px" FontColor="Yellow"/>
+          <Label Text="Pos" Width="60px" FontColor="Yellow"/>
+          <Label Text="Age" Width="60px" FontColor="Yellow"/>
+          <Label Text="Height" Width="80px" FontColor="Yellow"/>
+          <Label Text="Weight" Width="100px" FontColor="Yellow"/>
+          <Label Text="Ovr Rtg" Width="85px" FontColor="Yellow"/>
+          <Label Text="Pos Rtg" Width="85px" FontColor="Yellow"/>
+          <Label Text="Ath Rtg" Width="85px" FontColor="Yellow"/>
+          <Label Text="Int Rtg" Width="85px" FontColor="Yellow"/>
+          <Label Text="Contract" Width="150px" FontColor="Yellow"/>
+        </Group>
+      </Region>
+    </ViewSwitcher>
+
 
  <List Id="PlayerList" Items="{OLDraftPlayers}">
     <ListItem IsTemplate="True" Margin="0,510,0,0" AdjustToText="Height" >     
@@ -29,9 +68,9 @@
       </ListItem>
   </List>
     <Group Orientation="Horizontal" Spacing="50" OffsetFromParent="20,680,0,0" >
-      <Button Id="PrevBtn" Text="&lt;&lt;" BackgroundColor="Black" FontColor="White" Height="30" Width="30" Click="DecrementPage"></Button>
+      <Button Id="PrevBtn" Text="&lt;&lt;" BackgroundColor="ForestGreen" FontColor="White" Height="30" Width="30" Click="DecrementPage"></Button>
       <Label  Text="{PageText}" FontColor="Black" Width="75" Alignment="Left" FontSize="24" Margin="-35,0,0,0"/>
-      <Button Id="NextBtn" Text=">>" BackgroundColor="Black" FontColor="White" Height="30" Width="30" Click="IncrementPage"></Button>
+      <Button Id="NextBtn" Text=">>" BackgroundColor="ForestGreen" FontColor="White" Height="30" Width="30" Click="IncrementPage"></Button>
     </Group>
   </Region>
  

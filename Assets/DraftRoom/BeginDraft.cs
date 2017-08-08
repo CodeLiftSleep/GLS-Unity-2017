@@ -21,8 +21,6 @@ public class BeginDraft : MonoBehaviour {
     public TextMeshProUGUI UpdateClockTime;
     public TextMeshProUGUI UpdatePicksTB;
     public GameObject UpdatePicksPanel;
-    public Button nxtBtnClone;
-    public Text pageTextClone;
     private Image img;
     int i;
     private bool DisplayLatest;
@@ -33,7 +31,6 @@ public class BeginDraft : MonoBehaviour {
     private bool firstLoop = true; 
     private int teamOnClockID;
     public Button startDraftBtn;
-    public static Button nxtBtn;
     private AudioSource pickChime;
     private delegate void PickIn(DraftPick PickMade, int NextTeamOnClock, DraftPlayers PlayerSelected);
     PickIn PickIsIn;
