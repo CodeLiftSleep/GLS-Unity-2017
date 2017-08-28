@@ -2111,31 +2111,36 @@ public partial class DraftPick
 {
     [PrimaryKey, AutoIncrement]
     public Int32 PickID { get; set; }
-
     [NotNull]
     public Int32 Year { get; set; }
-
     [NotNull]
     public Int32 DraftRound { get; set; }
-
     public Int32? PickNumRound { get; set; }
-
     public Int32? PickNumOverall { get; set; }
-
     [NotNull]
     public Int32 PickTeamIDCurr { get; set; }
-
     [NotNull]
     public Int32[] PickTeamIDArray { get; set; }
-
     public Double PickValue { get; set; }
-
     [NotNull]
     public string PickType { get; set; }
-
     public string PlayerFName { get; set; }
     public string PlayerLName { get; set; }
     public Int32? PlayerID { get; set; }
     public string PlayerCollege { get; set; }
     public string PlayerPos { get; set; }
+}
+
+public partial class TeamNeeds
+{
+    [NotNull]
+    public Int32 TeamID { get; set; }
+    [NotNull]
+    public string Position { get; set; }
+    [NotNull]
+    public string Status { get; set; }
+    [NotNull]
+    public Int32 Importance { get; set; }
+    [NotNull]
+    public Int32 WillReach { get; set; }
 }

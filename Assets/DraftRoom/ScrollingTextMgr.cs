@@ -78,8 +78,14 @@ public class ScrollingTextMgr : MonoBehaviour {
             m_cloneTextObj.rectTransform.position = new Vector3(m_cloneTextObj.rectTransform.position.x, -4.52f, m_cloneTextObj.rectTransform.position.z);
             if (m_cloneTextObj.rectTransform.position.x <= -15) scrollPosition = -m_cloneTextObj.rectTransform.position.x;
             //Scroll the text across the screen by moving the RectTransform
-            m_textRectTransform.position = new Vector3((-scrollPosition % width), startPosition.y, startPosition.z);
-            scrollPosition += ScrollSpeed * Time.deltaTime;
+            
+            if (width != 0)
+            {
+                m_textRectTransform.position = new Vector3((-scrollPosition % width), startPosition.y, startPosition.z);
+                scrollPosition += ScrollSpeed * Time.deltaTime;
+            }
+           
+            
             yield return null;
         }
     }

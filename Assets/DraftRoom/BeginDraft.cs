@@ -64,9 +64,8 @@ public class BeginDraft : MonoBehaviour {
 
         //hook up the Start Button listener 
         startDraftBtn.onClick.AddListener(() => BeginCycle() );
-        
+       
 	}
-
 
     private void BeginCycle()
     {
@@ -92,7 +91,7 @@ public class BeginDraft : MonoBehaviour {
             }
             else
             {
-                yield return new WaitForSecondsRealtime(UnityEngine.Random.Range(35,60));
+                yield return new WaitForSecondsRealtime(UnityEngine.Random.Range(5,10));
                 //Call the delegate to run the various Pick Is In operations
                 PickIsIn(draftPicks[i], draftPicks[i + 1].PickTeamIDCurr, draftPlayers[i + 2]);
                 draftPlayers.RemoveAt(i + 2);

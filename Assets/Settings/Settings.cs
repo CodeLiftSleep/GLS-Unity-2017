@@ -18,6 +18,7 @@ public class Settings : MonoBehaviour {
         rsToolTip = GameObject.Find("RSTooltipTT").GetComponent<Text>();
         rsToolTip.gameObject.SetActive (false);
         myCanvasGrp.DOFade(1, 6);
+        
 	}
 	
 	// Update is called once per frame
