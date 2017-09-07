@@ -11,9 +11,8 @@
   
     <ViewSwitcher Id="HeaderSwitcher">
       <Region><!--Available Players/Best Available Players-->
-        <Group Spacing="3px" Orientation="Horizontal"  Width="80%" Margin="-500,20,0,0" Alignment="Right">
-          <Label Text="First Name" Width="100px" FontColor="Yellow"/>
-          <Label Text="Last Name" Width="100px" FontColor="Yellow"/>
+        <Group Spacing="3px" Orientation="Horizontal"  Width="80%" Margin="-490,20,0,0" Alignment="Right">
+          <Label Text="Player Name" Width="165px" FontColor="Yellow"/>
           <Label Text="Pos" Width="60px" FontColor="Yellow"/>
           <Label Text="Height" Width="60px" FontColor="Yellow"/>
           <Label Text="Weight" Width="80px" FontColor="Yellow"/>
@@ -22,51 +21,100 @@
           <Label Text="Proj. Round" Width="100px" FontColor="Yellow"/>
           <Label Text="40 Time" Width="80px" FontColor="Yellow"/>
         </Group>
+        <List Id="PlayerList" Items="{OLDraftPlayers}">
+          <ListItem IsTemplate="True" Margin="0,510,0,0" AdjustToText="Height" >
+            <Group Orientation="Horizontal"  Alignment="Left" Margin="-340,160,0,0">
+              <Label Text="{#Item.Name}" Width="165" Margin="-150,0,0,0"  />
+              <Label Text="{#Item.Position}" Width="60" Margin="-150,0,0,0"/>
+              <Label Text="{#Item.Height}" Width ="60" Margin="-140,0,0,0"/>
+              <Label Text="{#Item.Weight}" Width="80" Margin="-145,0,0,0"/>
+              <Label Text="{#Item.College}" Width="150" Margin="-140,0,0,0"/>
+              <Label Text="{#Item.Grade}" Width="60" Margin="-130,0,0,0"/>
+              <Label Text="{#Item.ProjRound}" Width="100" Margin="-110,0,0,0"/>
+              <Label Text="{#Item.FortyTime}" Width="80" Margin="-125,0,0,0"/>
+            </Group>
+          </ListItem>
+        </List>
       </Region>
       <Region> <!-- Drafted Players-->
-        <Group Spacing="3px" Orientation="Horizontal"  Width="80%" Margin="-500,20,0,0" Alignment="Right">
+        <Group Spacing="3px" Orientation="Horizontal"  Width="80%" Margin="-490,20,0,0" Alignment="Right">
           <Label Text="Round" Width="80px" FontColor="Yellow"/>
           <Label Text="Pick" Width="80px" FontColor="Yellow"/>
           <Label Text="Team" Width="100px" FontColor="Yellow"/>
-          <Label Text="Player" Width ="200px" FontColor="Yellow"/>
+          <Label Text="Player" Width ="175px" FontColor="Yellow"/>
           <Label Text="Pos" Width ="60px" FontColor="Yellow"/>
           <Label Text="College" Width="150px" FontColor="Yellow"/>
+          <Label Text="Age" Width="60px" FontColor="Yellow"/>
           <Label Text="Height" Width="60px" FontColor="Yellow"/>
           <Label Text="Weight" Width="80px" FontColor="Yellow"/>
         </Group>
+        <List Id="PlayerList" Items="{OLDraftPlayers}">
+          <ListItem IsTemplate="True" Margin="0,0,0,0" AdjustToText="Height" >
+            <Group Orientation="Horizontal"  Alignment="Left" Margin="-340,110,0,0">
+              <Label Text="{#Item.Round}" Width="80" Margin="-130,0,0,0"  />
+              <Label Text="{#Item.PickInRound}" Width="80" Margin="-130,0,0,0"/>
+              <Label Text="{#Item.Team}" Width="100" Margin="-150,0,0,0"/>
+              <Label Text="{#Item.Name}" Width ="175" Margin="-150,0,0,0"/>
+              <Label Text="{#Item.Position}" Width="60" Margin="-130,0,0,0"/>
+              <Label Text="{#Item.College}" Width="150" Margin="-140,0,0,0"/>
+              <Label Text="{#Item.Age}" Width="60" Margin="-130,0,0,0"/>
+              <Label Text="{#Item.Height}" Width="60" Margin="-120,0,0,0"/>  
+            <Label Text="{#Item.Weight}" Width="80" Margin="-120,0,0,0"/>
+            </Group>
+          </ListItem>
+        </List>
       </Region>
       <Region><!--Team Roster-->
         <Group Spacing="3px" Orientation="Horizontal"  Width="100%" Margin="-500,20,0,0" Alignment="Right">
-          <Label Text="Player" Width="200px" FontColor="Yellow"/>
+          <Label Text="Player Name" Width="165px" FontColor="Yellow"/>
           <Label Text="Pos" Width="60px" FontColor="Yellow"/>
-          <Label Text="Age" Width="60px" FontColor="Yellow"/>
-          <Label Text="Height" Width="80px" FontColor="Yellow"/>
-          <Label Text="Weight" Width="100px" FontColor="Yellow"/>
-          <Label Text="Ovr Rtg" Width="85px" FontColor="Yellow"/>
-          <Label Text="Pos Rtg" Width="85px" FontColor="Yellow"/>
-          <Label Text="Ath Rtg" Width="85px" FontColor="Yellow"/>
-          <Label Text="Int Rtg" Width="85px" FontColor="Yellow"/>
+          <Label Text="Depth" Width="60px" FontColor="Yellow"/>
+          <Label Text="Age" Width="40px" FontColor="Yellow"/>
+          <Label Text="Height" Width="60px" FontColor="Yellow"/>
+          <Label Text="Weight" Width="80px" FontColor="Yellow"/>
+          <Label Text="Ovr Rtg" Width="60px" FontColor="Yellow"/>
+          <Label Text="Pos Rtg" Width="60px" FontColor="Yellow"/>
+          <Label Text="Ath Rtg" Width="60px" FontColor="Yellow"/>
+          <Label Text="Int Rtg" Width="130px" FontColor="Yellow"/>
           <Label Text="Contract" Width="150px" FontColor="Yellow"/>
         </Group>
+        <List Id="TeamRoster" Items="{OLDraftPlayers}">
+          <ListItem IsTemplate="True" Margin="0,490,0,0" AdjustToText="Height" >
+            <Group Orientation="Horizontal"  Alignment="Left" Margin="-340,160,0,0">
+              <Label Text="{#Item.Name}" Width="165" Margin="-150,0,0,0"  />             
+              <Label Text="{#Item.Position}" Width="60" Margin="-150,0,0,0"/>   
+              <Label Text="{#Item.Depth}" Width="60" Margin="-150,0,0,0"/>
+              <Label Text="{#Item.Age}" Width="40" Margin ="-150,0,0,0"/>
+              <Label Text="{#Item.Height}" Width ="60" Margin="-140,0,0,0"/>
+              <Label Text="{#Item.Weight}" Width="80" Margin="-140,0,0,0"/>   
+              <Label Text="{#Item.OvRtg}" Width="60" Margin="-120,0,0,0"/>
+              <Label Text="{#Item.PosRtg}" Width="60" Margin="-120,0,0,0"/>
+              <Label Text="{#Item.AthRtg}" Width="60" Margin="-110,0,0,0"/>
+              <Label Text="{#Item.IntRtg}" Width="60" Margin="-110,0,0,0"/>            
+              <Label Text="{#Item.Contract}" Width="150" Margin="-110,0,0,0"/>
+            </Group>
+          </ListItem>
+        </List>
+      </Region>
+      <Region><!--Team Needs-->
+        <Group Spacing="3px" Orientation="Horizontal" Width="100%" Margin="-500,20,0,0" Alignment="Right">
+          <Label Text="Position" Width="80px" FontColor="Yellow"></Label>
+          <Label Text="Need" Width="200px" FontColor="Yellow" Margin="60,0,0,0"></Label>
+          <Label Text="Importance" Width="100px" FontColor="Yellow"/>
+        </Group>
+        <List Id="TeamNeeds" Items="{OLDraftPlayers}">
+          <ListItem IsTemplate="True" Margin="0,0,0,0" AdjustToText="Height">
+            <Group Orientation="Horizontal" Alignment="Left" Margin="-340,90,0,0">
+              <Label Text="{#Item.Position}" Width="80px" Margin="-150,0,0,0"/>
+              <Label Text="{#Item.Need}" Width="200px" Margin="-100,0,0,0"/>
+              <Label Text="{#Item.Importance}" Width="100px" Margin="-100,0,0,0"/>
+            </Group>
+          </ListItem>  
+        </List>       
       </Region>
     </ViewSwitcher>
+    
 
-
- <List Id="PlayerList" Items="{OLDraftPlayers}">
-    <ListItem IsTemplate="True" Margin="0,510,0,0" AdjustToText="Height" >     
-         <Group Orientation="Horizontal"  Alignment="Left" Margin="-340,160,0,0">
-            <Label Text="{#Item.FName}" Width="100" Margin="-150,0,0,0"  />
-            <Label Text="{#Item.LName}" Width="100" Margin="-150,0,0,0"/>
-            <Label Text="{#Item.CollegePOS}" Width="60" Margin="-150,0,0,0"/>
-           <Label Text="{#Item.Height}" Width ="60" Margin="-140,0,0,0"/>
-           <Label Text="{#Item.Weight} lbs" Width="100" Margin="-150,0,0,0"/>
-           <Label Text="{#Item.College}" Width="150" Margin="-160,0,0,0"/>
-           <Label Text="{#Item.ActualGrade}" Width="60" Margin="-160,0,0,0"/>
-           <Label Text="TBD" Width="100" Margin="-130,0,0,0"/>
-           <Label Text="{#Item.FortyYardTime}" Margin="-145,0,0,0"/>
-         </Group>      
-      </ListItem>
-  </List>
     <Group Orientation="Horizontal" Spacing="50" OffsetFromParent="20,680,0,0" >
       <Button Id="PrevBtn" Text="&lt;&lt;" BackgroundColor="ForestGreen" FontColor="White" Height="30" Width="30" Click="DecrementPage"></Button>
       <Label  Text="{PageText}" FontColor="Black" Width="75" Alignment="Left" FontSize="24" Margin="-35,0,0,0"/>

@@ -38,6 +38,9 @@ public class BeginDraft : MonoBehaviour {
     //Create a list of Draft Picks
     public static List<DraftPick> draftPicks { get; set; }
     public static List<DraftPlayers> draftPlayers { get; set; }
+    //This keeps a list of all the trade offers that are on the table...check the list before deciding what to do.
+    public static List<TradeOffer> TradeOffers = new List<TradeOffer>();
+    public static List<DraftDepth> draftDepth = new List<DraftDepth>();
 
     // Use this for initialization
     void Start () {
@@ -248,6 +251,55 @@ public class BeginDraft : MonoBehaviour {
         }
         if(!pickFlashing) UpdateClockTime.text = "<size=70%><color=white>Round " + draftPicks[i].DraftRound.ToString() + " Pick " + draftPicks[i].PickNumRound + "</color></size>\n" + DraftClock.TimeDisplay;
 
+    }
+    public class OvDraftAI
+    {
+        public int TeamID;
+        //groups of players this team is targeting---GroupOne are the ones they want most, group two the next group, etc...
+        public List<DraftPlayers> GroupOne;
+        public List<DraftPlayers> GroupTwo;
+        public List<DraftPlayers> GroupThree;
+        public List<DraftPlayers> GroupFour;
+        public List<DraftPlayers> GroupFive;
+
+        //type of player the team is looking for at that position---PartTimeStarter would be like Slot WR or Nickel CB--Key Role Player like Pass Rush Secialist, etc
+        playerType playerTypes;
+        //types of players the team needs based on posStrength
+        public List<TeamNeeds> posNeedTeam;
+        //Dictionary of relative strength of each position on the team
+        public Dictionary<string, int> posStrengthTeam;
+        //Dictionary of the % dropoff between best player at this position and next best player
+        public List<PosDropOff> dropOffPercentage;
+        public enum FirstRndStrat { MakeSplash = 1, AggressiveUp, AggressiveDown, AccumulatePicks };
+        public enum SecondRndStrat { }
+
+        //default constructor---initialize the varius components
+        public OvDraftAI()
+        {
+            playerTypes = new playerType();
+            GroupOne = new List<DraftPlayers>();
+            GroupTwo = new List<DraftPlayers>();
+            GroupThree = new List<DraftPlayers>();
+            GroupFour = new List<DraftPlayers>();
+            GroupFive = new List<DraftPlayers>();
+            posNeedTeam = new List<TeamNeeds>();
+            posStrengthTeam = new Dictionary<string, int>();
+            dropOffPercentage = new List<PosDropOff>();
+        }
+    }
+    public enum playerType { Starter = 1, PartTimeStarter, KeyRolePlayer, PrimaryBackup, Depth, StarterBackup, StarterDepth, KRPBackup, KRPDepth, BackupDepth };
+
+    //This class keeps trade offers between teams
+    public class TradeOffer
+    {
+        public int InitiatingTeamID;
+        public int TradePartnerTeamID;
+        public int[] InitiatingPickNums;
+        public int[] TradePartnerPickNums;
+        public double InitiatingTeamPickValue; //the amount of "points" the initiating team is offering in points
+        public double TradePartnerPickValue; //the amount of "points" the trade partner team is offering in 
+        public int[] InitiatingTeamPlayerIDs; //player ID's the initiating team is offering in addition to picks
+        public int[] TradePartnerPlayerIDs; //player ID's the trade partner team is offering in addition to picks
     }
 }
 

@@ -2130,7 +2130,7 @@ public partial class DraftPick
     public string PlayerCollege { get; set; }
     public string PlayerPos { get; set; }
 }
-
+//This holds current team need information
 public partial class TeamNeeds
 {
     [NotNull]
@@ -2143,4 +2143,21 @@ public partial class TeamNeeds
     public Int32 Importance { get; set; }
     [NotNull]
     public Int32 WillReach { get; set; }
+}
+
+//This holds the positional depth information for the draft
+public partial class DraftDepth
+{    [NotNull]
+    public Int32 Year { get; set; }
+    [NotNull]
+    public string Position { get; set; }
+    [NotNull]
+    public string Depth { get; set; }
+}
+public partial class PosDropOff
+{
+    public string Position { get; set; }
+    public double TopPlayerGrade { get; set; }
+    public double NextPlayerGrade { get; set; }
+    public double DropOff { get; set; }
 }
