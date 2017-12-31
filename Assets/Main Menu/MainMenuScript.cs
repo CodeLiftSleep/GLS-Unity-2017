@@ -6,55 +6,90 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
-public class MainMenuScript : MonoBehaviour {
-
-    public Button startBtn;
-    public Button exitBtn;
-    public Button settingsBtn;
-    public GameObject panel;
-    public CanvasGroup canvasGrp;
-    
-    // Use this for initialization
-    void Start () {
-       
-        CanvasGroup myCanvasGroup = canvasGrp.GetComponent<CanvasGroup>();
-        DOTween.Init();
-        myCanvasGroup.DOFade(1, 6);
-
-        //Button startBtn = start.GetComponent<Button>();
-        startBtn.onClick.AddListener(StartGame);
-
-        //Button exitBtn = exit.GetComponent<Button>();
-        //exitBtn.onClick.AddListener(QuitGame(panel));
-
-        //Button settingsBtn = settings.GetComponent<Button>();
-        settingsBtn.onClick.AddListener(delegate { GetSettings(myCanvasGroup); });
-	}
-
-    //pass in the canvasgroup object to the event listener so we can fade it out before switching scenes
-    private void GetSettings(CanvasGroup myCanvasGrp)
+namespace GLS
+{
+    public class MainMenuScript : MonoBehaviour
     {
-        myCanvasGrp.DOFade(0, 3);
-        StartCoroutine(WaitForFade(myCanvasGrp));
-       
-    }
-    private IEnumerator WaitForFade (CanvasGroup myCanvasGrp)
-    {
-        do
+
+        public Button startBtn;
+        public Button exitBtn;
+        public Button settingsBtn;
+        public GameObject panel;
+        public CanvasGroup canvasGrp;
+
+        // Use this for initialization
+        void Start()
         {
-            yield return null;
-        } while (myCanvasGrp.alpha > 0);
 
-        SceneManager.LoadSceneAsync("Assets/Settings/Settings.unity", LoadSceneMode.Single);
+            CanvasGroup myCanvasGroup = canvasGrp.GetComponent<CanvasGroup>();
+            DOTween.Init();
+            myCanvasGroup.DOFade(1, 6);
+
+            //Button startBtn = start.GetComponent<Button>();
+            startBtn.onClick.AddListener(StartGame);
+
+            //Button exitBtn = exit.GetComponent<Button>();
+            //exitBtn.onClick.AddListener(QuitGame(panel));
+
+            //Button settingsBtn = settings.GetComponent<Button>();
+            settingsBtn.onClick.AddListener(delegate { GetSettings(myCanvasGroup); });
+        }
+
+        //pass in the canvasgroup object to the event listener so we can fade it out before switching scenes
+        private void GetSettings(CanvasGroup myCanvasGrp)
+        {
+            myCanvasGrp.DOFade(0, 3);
+            StartCoroutine(WaitForFade(myCanvasGrp));
+
+        }
+        private IEnumerator WaitForFade(CanvasGroup myCanvasGrp)
+        {
+            do
+            {
+                yield return null;
+            } while (myCanvasGrp.alpha > 0);
+
+            SceneManager.LoadSceneAsync("Assets/Settings/Settings.unity", LoadSceneMode.Single);
+        }
+        private void StartGame()
+        {
+            //throw new NotImplementedException();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
-    private void StartGame()
+
+    public interface IEvaluate
     {
-        //throw new NotImplementedException();
+        String Result { get; set; }
+
+
+        void Evaluate();
+        
+       
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
+
+    public interface ITrade
+    {
+        String TeamStatus { get; set; }
+
+
+        void Trade();
+
+
+
+
+    }
+
+    public interface ITeams
+    {
+        
+
+    }
 }
 
